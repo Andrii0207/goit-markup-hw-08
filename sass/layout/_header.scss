@@ -13,8 +13,7 @@
   .header {
     padding-top: 10px;
     padding-bottom: 16px;
-    // background-color: var(--white-font-color);
-    background-color: teal;
+    background-color: var(--white-font-color);
   }
 
   .header__container {
@@ -40,6 +39,14 @@
 ///////////////////////
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .nav {
+  }
+
   .nav-list {
     display: flex;
     align-items: center;
@@ -47,10 +54,17 @@
 
   .contact-list {
     display: block;
+    margin-left: auto;
+    align-items: center;
   }
 
   .burger-menu-btn {
     display: none;
+  }
+
+  .header__container {
+    display: flex;
+    line-height: 0;
   }
 }
 
