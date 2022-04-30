@@ -1004,6 +1004,11 @@ address {
   background-color: transparent;
 }
 
+.mobile-menu__close-btn:hover,
+.mobile-menu__close-btn:focus {
+  fill: var(--btn-bg-color);
+}
+
 .mobile-menu__close-icon {
   position: absolute;
   top: 10px;
@@ -1030,6 +1035,10 @@ address {
 
 .mobile-menu__link:hover,
 .mobile-menu__link:focus {
+  color: var(--btn-bg-color);
+}
+
+.mobile-menu__link.current {
   color: var(--btn-bg-color);
 }
 
