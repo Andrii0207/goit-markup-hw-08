@@ -10,7 +10,17 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 5550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--btn-bg-color);
+}
+
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+  fill: var(--btn-bg-color);
 }
 
 .clients-icon {
