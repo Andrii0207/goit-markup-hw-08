@@ -55,16 +55,11 @@
     margin-left: -30px;
     margin-top: -30px;
   }
+}
 
-  .features-description {
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: var(--secondary-font-color);
+@media screen and (min-width: 1200px) {
+  .features-item {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
