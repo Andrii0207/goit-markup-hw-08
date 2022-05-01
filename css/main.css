@@ -45,6 +45,11 @@ address {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
@@ -115,6 +120,10 @@ address {
     border: none;
     line-height: 0;
     background-color: transparent;
+  }
+  .burger-menu-btn:hover .burger-menu-btn__icon,
+  .burger-menu-btn:focus .burger-menu-btn__icon {
+    fill: var(--btn-bg-color);
   }
   .burger-menu-btn__icon {
     fill: var(--primary-font-color);
@@ -292,6 +301,10 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+
+.features-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -519,10 +532,8 @@ address {
   gap: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .clients-item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
+.clients-item {
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 @media screen and (min-width: 768px) {
@@ -621,10 +632,9 @@ address {
 }
 
 .subscribe-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -679,35 +689,46 @@ address {
   color: var(--white-font-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list-icon {
+  margin-bottom: 60px;
+}
+
+.subscribe-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container-address {
+  text-align: center;
+}
+
+.footer-invite {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
   .footer-container-address {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-  }
-  .footer-list-icon {
-    margin-bottom: 60px;
-  }
   .subscribe-input {
-    margin-bottom: 20px;
-  }
-  .subscribe-form {
-    text-align: center;
-  }
-  .subscribe-btn {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .footer-container-address {
-    text-align: center;
-  }
-  .footer-invite {
-    text-align: center;
+    width: 450px;
   }
 }
 
@@ -728,6 +749,7 @@ address {
   }
   .subscribe-input {
     width: 358px;
+    margin-right: 12px;
   }
   .footer-container-wrapper {
     display: flex;
@@ -776,7 +798,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 100%;
   height: 580px;
   padding: 40px;
   background: var(--white-font-color);
@@ -971,6 +993,12 @@ address {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .logo {
   font-family: var(--secondary-font-family);
   font-style: normal;
@@ -991,11 +1019,11 @@ address {
   width: 100%;
   height: 100%;
   overflow: auto;
-  opacity: 0;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1012,8 +1040,8 @@ address {
   background-color: transparent;
 }
 
-.mobile-menu__close-btn:hover,
-.mobile-menu__close-btn:focus {
+.mobile-menu__close-btn:hover .mobile-menu__close-icon,
+.mobile-menu__close-btn:focus .mobile-menu__close-icon {
   fill: var(--btn-bg-color);
 }
 

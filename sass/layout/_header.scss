@@ -30,6 +30,11 @@
     background-color: transparent;
   }
 
+  .burger-menu-btn:hover .burger-menu-btn__icon,
+  .burger-menu-btn:focus .burger-menu-btn__icon {
+    fill: var(--btn-bg-color);
+  }
+
   .burger-menu-btn__icon {
     fill: var(--primary-font-color);
   }
