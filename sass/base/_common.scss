@@ -38,18 +38,17 @@ address {
   padding-bottom: 60px;
 }
 
-.section {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+// @media screen and (min-width: 480px) {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
-
 .header__logo {
   padding-top: 6px;
 }
