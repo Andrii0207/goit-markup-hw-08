@@ -22,44 +22,95 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="container header-container">
-            <a class="logo link" href="./index.html" lang="en"> <span class="web">Web</span><span
-                    class="studio-logo">Studio</span></a>
-            <nav class="navigation">
+        <div class="container header__container">
+            <a class="logo header__logo link" href="./index.html" lang="en"> <span class="logo-web">Web</span><span
+                    class="logo-studio">Studio</span></a>
+            <nav class="nav">
                 <ul class="nav-list list">
-                    <li class="nav-list-item">
-                        <a class="nav-list-link link" href="./index.html">Студия</a>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link link current" href="./index.html">Студия</a>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-list-link link current" href="./portfolio.html">Портфолио</a>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-list-link link" href="">Контакты</a>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
+            <button class="burger-menu-btn" type="button" data-menu-open>
+                <svg class="burger-menu-btn__icon" width="40" height="40">
+                    <use href="./img/sprite.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
             <ul class="contact-list list">
-                <li class="contact-item">
-                    <a class="contact-email header-contact link" href="mailto:info@example.com">
-                        <svg class="header-icon" width="16" height="12">
+                <li class="contact-list__item contact-list__email">
+                    <a class="contact-list__link contact-list__header link" href="mailto:info@example.com">
+                        <svg class="contact-list__icon" width="16" height="12">
                             <use href="./img/sprite.svg#envelope"></use>
                         </svg>
                         info@example.com</a>
                 </li>
-                <li class="contact-item">
-                    <a class="contact-number header-contact link" href="tel:+380961111111">
-                        <svg class="header-icon" width="10" height="16">
+                <li class="contact-list__item ontact-list__phone-number">
+                    <a class="contact-list__link contact-list__header link" href="tel:+380961111111">
+                        <svg class="contact-list__icon" width="10" height="16">
                             <use href="./img/sprite.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <!-- <div class="container mobile-menu__container"> -->
+            <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./img/sprite.svg#menu-close-icon"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__link current link" href="">Студия</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__link link" href="">Портфолио</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__link link" href="">Контакты</a>
+                </li>
+            </ul>
+
+            <div>
+                <ul class="mobile-menu__contact">
+                    <li class="mobile-menu__number-item list">
+                        <a class="mobile-menu__number-wrapper link" href="">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__email-item list">
+                        <a class="mobile-menu__email-wrapper link" href="">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social list">
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-name link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-name link" href="">Twitter</a>
+                    </li>
+                    <li class=" mobile-menu__social-item">
+                        <a class="mobile-menu__social-name link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-name link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </div>
     </header>
 
     <!-- PORTFOLIO-->
 
-    <section class="portfolio section">
+    <!-- <section class="portfolio section">
         <div class="portfolio-container container">
             <h2 hidden>portfolio-navigation</h2>
             <ul class="portfolio-list-btn list">
@@ -225,11 +276,11 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- FOOTER -->
 
-    <section class="footer section">
+    <!-- <section class="footer section">
         <div class="footer-container container">
             <div class="footer-container-address">
                 <a class="footer-logo link" href="./index.html"> Web<span class="studio">Studio</span></a>
@@ -295,8 +346,8 @@
                 </div>
             </form>
         </div>
-    </section>
-
+    </section> -->
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
