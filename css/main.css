@@ -8,6 +8,7 @@
   --btn-bg-color: #2196f3;
   --border-btn-color: #000000;
   --hero-bg-color: #2f303a;
+  --shadow-btn-color: #f5f4fa;
 }
 
 body {
@@ -1088,6 +1089,9 @@ address {
   .modal {
     width: 450px;
   }
+  .contact-form-message {
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1139,6 +1143,7 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
