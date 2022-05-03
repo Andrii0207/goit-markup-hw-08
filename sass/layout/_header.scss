@@ -96,7 +96,7 @@
   .nav-list__link.current::after {
     content: '';
     position: absolute;
-    bottom: -35px;
+    bottom: -36px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -140,7 +140,6 @@
 
   .header__container {
     display: flex;
-    line-height: 0;
   }
 }
 
