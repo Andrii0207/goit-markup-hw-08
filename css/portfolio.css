@@ -86,8 +86,33 @@ address {
   padding-top: 6px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
 .logo-studio {
   color: var(--primary-font-color);
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 16px;
+  background-color: var(--white-font-color);
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -96,17 +121,6 @@ address {
   }
   .contact-list {
     display: none;
-  }
-  .header {
-    padding-top: 10px;
-    padding-bottom: 16px;
-    background-color: var(--white-font-color);
-  }
-  .header__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .burger-menu-btn {
     padding: 0;
@@ -136,7 +150,6 @@ address {
   .nav-list {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
   }
   .nav-list__item {
     position: relative;
@@ -145,12 +158,15 @@ address {
     margin-right: 50px;
   }
   .nav-list__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    cursor: pointer;
     color: var(--primary-font-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -164,7 +180,7 @@ address {
   .nav-list__link.current::after {
     content: '';
     position: absolute;
-    bottom: -36px;
+    bottom: -35px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -174,11 +190,7 @@ address {
   .contact-list__email {
     margin-bottom: 10px;
   }
-  .contact-list {
-    display: block;
-    align-items: center;
-  }
-  .contact-list__header {
+  .contact-list__link {
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
@@ -187,8 +199,8 @@ address {
     letter-spacing: 0.02em;
     color: var(--secondary-font-color);
   }
-  .contact-list__header:hover,
-  .contact-list__header:focus {
+  .contact-list__link:hover,
+  .contact-list__link:focus {
     color: var(--accent-color);
   }
   .contact-list__icon {
@@ -196,8 +208,8 @@ address {
     fill: var(--secondary-font-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contact-list__header:hover .contact-list__icon,
-  .contact-list__header:focus .contact-list__icon {
+  .contact-list__link:hover .contact-list__icon,
+  .contact-list__link:focus .contact-list__icon {
     fill: var(--accent-color);
   }
   .burger-menu-btn {
@@ -206,6 +218,38 @@ address {
   .header__container {
     display: flex;
     line-height: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .nav {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contact-list__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+  }
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contact-list__email {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .nav-list__link.current::after {
+    bottom: -30px;
   }
 }
 
