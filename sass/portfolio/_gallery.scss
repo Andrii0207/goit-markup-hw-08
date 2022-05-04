@@ -45,8 +45,11 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-button {
+.portfolio-list-btn__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-button {
   padding: 5px 20px;
 
   font-family: inherit;
