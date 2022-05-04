@@ -118,7 +118,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
   color: var(--primary-font-color);
 }
 
@@ -141,6 +140,12 @@
     margin-top: 15px;
   }
 }
+
+// @media screen and (min-width: 480px) and (max-width: 767px) {
+//   .portfolio-type-list-desktop-mode {
+//     padding-bottom: 56px;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .portfolio-item {

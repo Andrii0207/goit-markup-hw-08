@@ -1,6 +1,5 @@
 .hero {
   max-width: 480px;
-  height: 400px;
   margin: 0 auto;
   background-image: url(../img/hero/hero-mobile.jpeg);
   background-size: cover;
@@ -33,7 +32,6 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
     background-image: url(../img/hero/hero-desktop.jpeg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

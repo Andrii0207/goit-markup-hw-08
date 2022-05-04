@@ -358,7 +358,6 @@ address {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
   color: var(--primary-font-color);
 }
 
@@ -658,6 +657,7 @@ address {
   overflow: auto;
   padding: 40px;
   display: flex;
+  z-index: 999;
   flex-direction: column;
   justify-content: space-between;
   opacity: 0;
