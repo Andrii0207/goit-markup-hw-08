@@ -732,7 +732,7 @@ address {
 }
 
 .mobile-menu__social-name {
-  font-family: --primary-font-family;
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
