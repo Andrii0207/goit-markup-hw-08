@@ -54,12 +54,7 @@
 ///////////////////////
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact-list {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-
-  .contact-list__link-email {
+  .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -147,15 +142,6 @@
   .contact-list__link:focus {
     color: var(--accent-color);
   }
-
-  // .contact-list__link-email {
-  //   margin-bottom: 10px;
-  // }
-
-  // .contact-list__link-number {
-  //   padding-top: 10px;
-  //   padding-bottom: 21px;
-  // }
 
   .contact-list__icon {
     margin-right: 10px;

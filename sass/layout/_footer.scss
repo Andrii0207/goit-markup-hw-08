@@ -191,13 +191,13 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 60px;
   }
 
-  .footer-container-address {
-    margin-right: 165px;
-  }
+  // .footer-container-address {
+  //   margin-right: 165px;
+  // }
 }
 
 @media screen and (min-width: 1200px) {

@@ -151,11 +151,7 @@ address {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact-list {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-  .contact-list__link-email {
+  .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -265,7 +261,7 @@ address {
 .hero {
   max-width: 480px;
   margin: 0 auto;
-  background-image: url(../img/hero/hero-mobile.jpeg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-mobile.jpeg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -287,7 +283,7 @@ address {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: url(../img/hero/hero-tablet.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tablet.jpeg);
   }
 }
 
@@ -300,7 +296,7 @@ address {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    background-image: url(../img/hero/hero-desktop.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-desktop.jpeg);
   }
 }
 
@@ -838,11 +834,8 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 60px;
-  }
-  .footer-container-address {
-    margin-right: 165px;
   }
 }
 
@@ -1230,7 +1223,7 @@ address {
 }
 
 .mobile-menu__social-name {
-  font-family: --primary-font-family;
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
