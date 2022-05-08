@@ -135,7 +135,15 @@
 }
 
 .contact-form-message::placeholder {
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .contact-form-message:focus {
